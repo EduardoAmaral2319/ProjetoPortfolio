@@ -6,12 +6,12 @@ CORS(app)
 
 @app.route('/contato', methods=['POST'])
 def contato():
-    # 1. Captura todos os campos que criamos no HTML
+    # 1 - Captura todos os campos criados no HTML
     nome = request.form.get('nome')
     email = request.form.get('email')
     mensagem = request.form.get('mensagem')
     
-    # 2. Retorna a nossa página de sucesso estilizada no tema Dark/Green
+    # 2 - Retorna a página de sucesso estilizada no tema preto/verde
     return f"""
     <!DOCTYPE html>
     <html lang="pt-BR">
